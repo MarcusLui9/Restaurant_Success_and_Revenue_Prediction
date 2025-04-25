@@ -5,8 +5,16 @@ There is always a demand for restaurants regardless of where you decide to live.
 ## Data
 The Restaurant Success dataset from Kaggle includes 15 feature columns, 14 of which are useable for anaylsis. These features are both classified as categorical and numerical, and can be used to determine whether or not a restaurant would be a success. More info on this dataset can be found at [https://www.kaggle.com/datasets/liyangng/restaurant-success-prediction/data]
 
+![Successful_Restaurant Comparison](Images/Successful_Restaurant_Comparison.png)
+![Successful Restaurants per City](Images/Succ_Rest_perCity.png)
+![Successful Restaurants per Cuisine](Images/Succ_Rest_perCuisine.png)
+![Restaurant Success Correlation Heatmap](Images/Restaurant_Success_Corr_HM.png)
+![Social Media Followers vs Marketing Budget Scatterplot](Images/SCTPLT_Social_Media_Followers_vs_Marketing_Budget.png)
+
+Upon performing a 
+
 ## Modeling and Performance
-In this project we employed various modeling techniques.
+In this project we employed various modeling techniques
 
 ## Conclusions
 
