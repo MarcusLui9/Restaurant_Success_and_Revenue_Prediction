@@ -16,8 +16,15 @@ After having discovered no correlation between the categorical features, I took 
 ![Restaurant Success Correlation Heatmap](Images/Restaurant_Success_Corr_HM.png)
 ![Social Media Followers vs Marketing Budget Scatterplot](Images/SCTPLT_Social_Media_Followers_vs_Marketing_Budget.png)
 
+After this preliminary inspection, the data was split into training and test data.
+
 ## Modeling and Performance
-In this project we employed various modeling techniques to predict annual revenue and with that, restaurant success. The models evaluated include  `Decision Trees`, `SVM`, `Linear Regression`, and `Random Forest`.
+
+In this project we employed various modeling techniques to classify whether a restaurant was successful, and to predict annual revenue. The models that were used for classification included `Logistic Regression`, `KNN`, `Decision Trees`, and `Random Forest`. The metrics that were used for comparisons for the classification models include Accuracy (train and test), R2 score, MSE, Precision Score, and Recall Score.
+
+![Inital Classification Model Performance Comparison](Inital_Classification_Model_Performance_Comparison.png)
+
+The models that were used for regression included  `SVM`, `Linear Regression`, `Lasso`, and `Random Forest`.  The metrics that were used for comparisons for the regression models include Accuracy (train and test), R2 score, MSE, and MAE.
 
 ## Conclusions
 
