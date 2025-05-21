@@ -24,7 +24,7 @@ In this project we employed various modeling techniques to classify whether a re
 
 ![Inital Classification Model Performance Comparison](Images/Inital_Classification_Model_Performance_Comparison.png)
 
-As shown in the figure above, the decision tree model and the random forest model performed significantly better than the dummy model, the logistic regression model, and the k-nearest neighbors model. When looking at the other metrics, we can clearly see that decision tree and random forest outperform both logistic regression and k-nearest neighbors by having a higher r2 score and lower MSE. This can be seen in the barplot below.
+As shown in the figure above, the decision tree model and the random forest model performed significantly better than the dummy model, the logistic regression model, and the k-nearest neighbors model. When looking at the other metrics, we can clearly see that decision tree and random forest outperform both logistic regression and k-nearest neighbors by having a higher r2 score and lower MSE. This can be seen in the barplot below. In addition, all of the classification models recorded a precision score and a recall score over 80%. This is a great result as it proves the accuracy of the models in its ability to deem whether a restaurant to be successful or not.
 
 ![Further Analysis Results](Images/Further_Analysis_Results.png)
 
@@ -35,5 +35,11 @@ After having done a first pass on these models, I used GridSearchCV to find the 
 
 The models that were used for regression included  `SVM`, `Linear Regression`, `Lasso`, and `Random Forest`.  The metrics that were used for comparisons for the regression models include Accuracy (train and test), R2 score, MSE, and MAE.
 
-## Conclusions
+![Regression_Models_Training_and_Test_Accuracies](Images/Regression_Models_Training_and_Test_Accuracies.png)
+![Regression_Models_Further_Analysis](Images/Regression_Models_Further_Analysis.png)
+![Regression_Models_Results_Comparison](Images/Regression_Models_Results_Comparison.png)
 
+From these results, it seems that the models created were overfitted. Surprisingly, the Random Forest Regressor was the only model that had a high training accuracy. Otherwise, every other model resulted in a low training accuracy and low test accuracy. This proves to be consistent with the high MAE and MSE results and low R2 score. GridSearchCV was also applied to Random Forest Regressor and the Lasso Regressor, but there seemed to be little change to the results of the model. Despite the high overfitting results determined from these models, it does align with the original scatterplot picture above, as there seems to be little correlation between revenue and general restaurant success.
+
+## Conclusions
+These data provided for this project is intended for classification and can be used reliably to determine whether a restaurant to be successful or not. However, when it comes to predicting a restaurant's revenue, each model was continuously overfitted. This leads me to believe these are not the right parameters to properly predict a restuarant's revenue. 
